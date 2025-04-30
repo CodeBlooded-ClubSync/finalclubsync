@@ -1,0 +1,28 @@
+.calendar-page-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  gap: 20px;
+  flex-wrap: nowrap; /* Prevent wrapping */
+}
+
+.events-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  flex: 1;
+  max-width: 70%;
+}
+
+.event-card {
+  background-color: #004d4d;
+  color: white;
+  padding: 16px;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.calendar-sidebar {
+  min-width: 300px;
+  /* Optional: Add styling for the sidebar if needed */
+}
