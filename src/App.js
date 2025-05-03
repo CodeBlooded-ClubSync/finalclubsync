@@ -1,30 +1,4 @@
-// import logo from './logo.svg';
-// import './App.css';
 
-// function App() {
-//   return (
-//     <div className="App">
-//       <header className="App-header">
-//         <img src={logo} className="App-logo" alt="logo" />
-//         <p>
-//           Edit <code>src/App.js</code> and save to reload.
-//         </p>
-//         <a
-//           className="App-link"
-//           href="https://reactjs.org"
-//           target="_blank"
-//           rel="noopener noreferrer"
-//         >
-//           Learn React
-//         </a>
-//       </header>
-//     </div>
-//   );
-// }
-
-// export default App;
-
-// App.js
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import HomePage from "./HomePage";
@@ -35,6 +9,9 @@ import Login from "./components/Login"
 import Signup from "./components/Signup";
 import CalendarPage from "./components/CalenderPage";
 import SingleEventPage from './components/SingleEventPage';
+import AddEventPage from "./components/AddEventPage";
+import AboutUs from "./components/AboutUs";
+import ContactUs from "./components/ContactUs";
 
 
 function App() {
@@ -47,6 +24,9 @@ function App() {
         <Route path="/Signup" element={<Signup/>}/>
         <Route path="/Calendar" element={<CalendarPage/>}/>
         <Route path="/event/:id" element={<SingleEventPage />} />
+        <Route path="/AddEventPage" element={<AddEventPage />} />
+        <Route path="/AboutUS" element={<AboutUs />} />
+        <Route path="/Contact" element={<ContactUs />} />
 
         
 

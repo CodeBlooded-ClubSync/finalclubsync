@@ -24,6 +24,7 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
 import events from '../components/EventData'; // Adjust the path if needed
+import AddEventPoll from '../components/AddEventPoll'
 
 const SingleEventPage = () => {
   const { id } = useParams();
@@ -42,6 +43,7 @@ const SingleEventPage = () => {
         <p className="text-gray-700 mb-2"><strong>Organizer:</strong> {event.organizer}</p>
         <p className="text-gray-700"><strong>Description:</strong> {event.description}</p>
       </div>
+      <AddEventPoll/>
     </div>
   );
 };

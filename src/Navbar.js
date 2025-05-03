@@ -48,6 +48,7 @@ import { Link } from 'react-router-dom';
 import logo from './clublogo.png'; // Replace with actual path to your logo
 import Login from './components/Login';
 import Signup from './components/Signup'
+import AddEventPage from './components/AddEventPage';
 
 function Navbar() {
   return (
@@ -84,6 +85,9 @@ function Navbar() {
               <Link className="nav-link" to="/calendar">Calendar/Events</Link>
             </li>
             <li className="nav-item">
+              <Link className="nav-link" to="/AddEventPage">AddEvent</Link>
+            </li>
+            <li className="nav-item">
               <Link className="nav-link" to="/aboutus">About Us</Link>
             </li>
           </ul>
@@ -107,4 +111,5 @@ function Navbar() {
 }
 
 export default Navbar;
+
 

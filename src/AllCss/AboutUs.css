@@ -1,0 +1,30 @@
+/* Background and centering */
+.about-us-wrapper {
+    background: linear-gradient(to bottom, #fdfdf8, #f8f6f2);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 60px 20px;
+    font-family: "Poppins", "Segoe UI", sans-serif;
+  }
+  
+  /* Container for text */
+  .about-us-content {
+    max-width: 850px;
+    color: #2d2d2d;
+    line-height: 1.8;
+    font-size: 17px;
+    text-align: left;
+  }
+  
+  .about-us-content h1 {
+    font-size: 48px;
+    font-weight: 700;
+    color: #1e1e26;
+    margin-bottom: 30px;
+  }
+  
+  .about-us-content p {
+    margin-bottom: 20px;
+  }
